@@ -80,3 +80,9 @@
     background-color: var(--cor-apoio);
     color: var(--cor-texto);
 }
+
+/* Acessibilidade */
+.logoBarra nav ul li a:focus-visible{
+    outline: 3px solid var(--cor-clara);
+    outline-offset: 3px;
+}
