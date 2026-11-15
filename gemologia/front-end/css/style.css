@@ -7,9 +7,78 @@
     --cor-apoio: #006192;
     --cor-destaque: #4227B8;
     --cor-texto: #ffffff;
+    --cor-fundo: #ffffff;
     --fonte-principal: Arial, sans-serif;
 }
 
+/* CONFIGURAÇÕES GERAIS */
+* {
+    box-sizing: border-box;
+}
+body {
+    margin: 0;
+    padding: 0;
+    font-family: var(--fonte-principal);
+    background-color: var(--cor-fundo);
+    color: var(--cor-primaria);
+}
+main {
+    width: 90%;
+    max-width: 1100px;
+    margin: 40px auto;
+}
+
+section {
+    margin-bottom: 45px;
+}
+
+h1 {
+    font-size: 32px;
+    color: var(--cor-primaria);
+}
+
+h2 {
+    font-size: 24px;
+    color: var(--cor-primaria);
+}
+
+h3 {
+    font-size: 18px;
+    color: var(--cor-primaria);
+}
+
+p {
+    font-size: 16px;
+    line-height: 1.7;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+a {
+    color: var(--cor-secundaria);
+    text-decoration: underline;
+    transition: 0.3s;
+}
+
+a:hover {
+    color: var(--cor-destaque);
+}
+
+a:focus-visible {
+    outline: 3px solid var(--cor-secundaria);
+    outline-offset: 3px;
+}
+
+hr {
+    border: none;
+    height: 2px;
+    background-color: var(--cor-secundaria);
+    width: 90%;
+    margin: 40px auto;
+}
 /* MENU */
 .logoBarra {
     width: 100%;
@@ -20,6 +89,9 @@
     justify-content: space-between;
     padding: 15px 5%;
     box-sizing: border-box;
+}
+
+header {
     position: sticky;
     top: 0;
     z-index: 1000;
@@ -96,4 +168,100 @@
     width: 15%;
     border: 2px solid white;
     border-radius: 50%;
+}
+
+/* PÁGINA GEOLOGIA NO BRASIL */
+.pagina-brasil main {
+    width: 90%;
+    max-width: 1100px;
+    margin: 45px auto;
+}
+/* APRESENTAÇÃO */
+.intro-brasil {
+    background-color: var(--cor-clara);
+    padding: 35px;
+    border-radius: 12px;
+    border-left: 6px solid var(--cor-secundaria);
+}
+
+.intro-brasil h1 {
+    margin-top: 0;
+}
+
+.intro-brasil p {
+    max-width: 850px;
+}
+
+/* LINHA DO TEMPO */
+
+.linha-tempo {
+    padding: 20px;
+}
+
+.linha-tempo ul {
+    list-style: none;
+    padding-left: 25px;
+    border-left: 3px solid var(--cor-terciaria);
+}
+
+.linha-tempo li {
+    position: relative;
+    background-color: var(--cor-clara);
+    padding: 18px 20px;
+    margin-bottom: 18px;
+    border-radius: 8px;
+    line-height: 1.6;
+    transition: 0.3s;
+}
+
+.linha-tempo li:hover {
+    background-color: var(--cor-terciaria);
+    color: var(--cor-texto);
+}
+
+.linha-tempo li::before {
+    content: "";
+    position: absolute;
+    width: 13px;
+    height: 13px;
+    background-color: var(--cor-secundaria);
+    border-radius: 50%;
+    left: -33px;
+    top: 22px;
+}
+
+.linha-tempo strong {
+    color: var(--cor-secundaria);
+}
+
+.linha-tempo li:hover strong {
+    color: var(--cor-texto);
+}
+
+/* ESTADOS PRODUTORES */
+.estados-produtores {
+    background-color: var(--cor-clara);
+    padding: 35px;
+    border-radius: 12px;
+}
+.estados-produtores ul {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 18px;
+    list-style: none;
+    padding: 0;
+}
+.estados-produtores li {
+    background-color: var(--cor-fundo);
+    padding: 20px;
+    border-radius: 8px;
+    border-left: 5px solid var(--cor-apoio);
+    line-height: 1.6;
+    transition: 0,3s;
+}
+.estados-produtores li:hover {
+    border-left-color: var(--cor-destaque);
+}
+.estados-produtores strong {
+    color: var(--cor-secundaria);
 }
