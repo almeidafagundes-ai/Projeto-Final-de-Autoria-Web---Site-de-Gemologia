@@ -74,11 +74,12 @@ a:focus-visible {
 }
 
 hr {
-    border: none;
-    height: 2px;
+    width: 65px;
+    height: 4px;
+    margin: 0 0 20px;
     background-color: var(--cor-secundaria);
-    width: 90%;
-    margin: 40px auto;
+    border: none;
+    border-radius: 5px;
 }
 
 /* MENU */
@@ -160,16 +161,161 @@ header {
     outline-offset: 3px;
 }
 
-/* GALERIA: INÍCIO */
-.galeria {
-    display: flex;
-    gap: 10px;
+/* Página inicial */
+.pagina-inicio .inicio-apresentacao {
+    background-color: var(--cor-primaria);
+    padding: 45px;
+    border-radius: 15px;
+    margin-bottom: 55px;
+    color: var(--cor-texto);
 }
-
-.galeria img {
-    width: 15%;
-    border: 2px solid white;
-    border-radius: 50%;
+.pagina-inicio .inicio-apresentacao hr {
+    width: 80px;
+    height: 4px;
+    margin: 0 0 25px;
+    background-color: var(--cor-clara);
+    border-radius: 5px;
+}
+.pagina-inicio .inicio-apresentacao h1 {
+    color: var(--cor-texto);
+    margin-bottom: 20px;
+}
+.pagina-inicio .inicio-apresentacao p {
+    color: var(--cor-texto);
+    max-width: 800px;
+    margin-bottom: 30px;
+}
+.pagina-inicio .inicio-apresentacao > a {
+    display: inline-block;
+    background-color: var(--cor-secundaria);
+    color: var(--cor-texto);
+    padding: 14px 25px;
+    border-radius: 8px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: 0.3s;
+}
+.pagina-inicio .inicio-apresentacao > a:hover {
+    background-color: var(--cor-destaque);
+}
+.pagina-inicio .inicio-conteudo {
+    margin-bottom: 60px;
+}
+.pagina-inicio .inicio-conteudo hr,
+.pagina-inicio .inicio-gemas hr {
+    width: 65px;
+    height: 4px;
+    margin: 0 0 20px;
+    background-color: var(--cor-secundaria);
+    border-radius: 5px;
+}
+.pagina-inicio .inicio-conteudo h2,
+.pagina-inicio .inicio-gemas h2 {
+    margin-bottom: 30px;
+}
+.pagina-inicio .inicio-conteudo ul {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+    list-style: none;
+    padding: 0;
+}
+.pagina-inicio .inicio-conteudo li {
+    background-color: var(--cor-clara);
+    border-left: 5px solid var(--cor-secundaria);
+    border-radius: 10px;
+    padding: 25px;
+    transition: 0.3s;
+}
+.pagina-inicio .inicio-conteudo {
+    margin-bottom: 60px;
+}
+.pagina-inicio .inicio-conteudo hr,
+.pagina-inicio .inicio-gemas hr {
+    width: 65px;
+    height: 4px;
+    margin: 0 0 20px;
+    background-color: var(--cor-secundaria);
+    border-radius: 5px;
+}
+.pagina-inicio .inicio-conteudo h2,
+.pagina-inicio .inicio-gemas h2 {
+    margin-bottom: 30px;
+}
+.pagina-inicio .inicio-conteudo ul {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+    list-style: none;
+    padding: 0;
+}
+.pagina-inicio .inicio-conteudo li {
+    background-color: var(--cor-clara);
+    border-left: 5px solid var(--cor-secundaria);
+    border-radius: 10px;
+    padding: 25px;
+    transition: 0.3s;
+}
+.pagina-inicio .inicio-conteudo li:hover {
+    background-color: var(--cor-terciaria);
+}
+.pagina-inicio .inicio-conteudo li a {
+    display: block;
+    color: var(--cor-primaria);
+    text-decoration: none;
+    font-weight: bold;
+}
+.pagina-inicio .inicio-conteudo li:hover a {
+    color: var(--cor-texto);
+}
+.pagina-inicio .inicio-gemas {
+    text-align: center;
+    margin-bottom: 60px;
+}
+.pagina-inicio .inicio-gemas hr {
+    margin: 0 auto 20px;
+}
+/* GALERIA: INÍCIO */
+.pagina-inicio .galeria {
+    margin: 30px 0;
+}
+.pagina-inicio .galeria a {
+    display: flex;
+    flex-direction: row;
+    gap: 22px;
+    width: 100%;
+    background: transparent;
+    padding: 0;
+    overflow: visible;
+}
+.pagina-inicio .galeria img {
+    flex: 1;
+    min-width: 0;
+    height: 220px;
+    object-fit: contain;
+    padding: 18px;
+    background-color: var(--cor-fundo);
+    border: 1px solid var(--cor-clara);
+    border-radius: 14px;
+    box-shadow: 0 3px 10px rgba(0, 23, 109, 0.06);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.pagina-inicio .galeria img:hover {
+    transform: scale(1.06);
+    box-shadow: 0 6px 18px rgba(0, 23, 109, 0.15);
+}
+.pagina-inicio .inicio-gemas > a {
+    display: inline-block;
+    background-color: var(--cor-secundaria);
+    color: var(--cor-texto);
+    padding: 13px 22px;
+    border-radius: 8px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: 0.3s;
+}
+.pagina-inicio .inicio-gemas > a:hover {
+    background-color: var(--cor-destaque);
 }
 
 /* PÁGINA GEOLOGIA NO BRASIL */
