@@ -513,3 +513,15 @@ body:has(.divMinRoc) .amostras img:hover {
     border-color: var(--cor-secundaria);
     box-shadow: 0 6px 16px rgba(0, 23, 109, 0.18);
 }
+
+/* GALERIA: CATÁLOGO */
+.cat > {
+    display: flex;
+}
+
+.cat div img {
+    width: 15%;
+    border: 2px;
+    border-color: var(--cor-secundaria);
+    border-radius: 50%;
+}
