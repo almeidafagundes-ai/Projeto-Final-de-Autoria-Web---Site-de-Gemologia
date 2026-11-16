@@ -525,3 +525,30 @@ body:has(.divMinRoc) .amostras img:hover {
     border-color: var(--cor-secundaria);
     border-radius: 50%;
 }
+
+/* ALTERAÇÕES EM IMAGENS INDIVIDUAIS */
+
+#agua-marinha {
+    position: relative;
+    top: 30px;
+    width: 23%;
+}
+
+#esmeralda2 {
+    position: relative;
+    top: 25px;
+    width: 20%;
+}
+
+#granada {
+    position: relative;
+    top: 50px;
+    width: 19%;
+}
+
+#rubi {
+    position: relative;
+    bottom: 1;
+    right: 50px;
+    width: 27%;
+}
