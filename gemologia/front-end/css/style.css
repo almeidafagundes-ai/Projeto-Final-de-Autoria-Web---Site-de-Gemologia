@@ -514,6 +514,108 @@ body:has(.divMinRoc) .amostras img:hover {
     box-shadow: 0 6px 16px rgba(0, 23, 109, 0.18);
 }
 
+/* PÁGINA IDENTIFICAÇÃO DE GEMAS */
+
+.pagina-identificacao main {
+    padding: 35px 6%;
+}
+
+.pagina-identificacao .introducao-identificacao {
+    background-color: var(--cor-primaria);
+    color: var(--cor-texto);
+    padding: 35px;
+    border-radius: 12px;
+    margin-bottom: 35px;
+    border-left: 7px solid var(--cor-terciaria);
+}
+
+.pagina-identificacao .introducao-identificacao hr {
+    width: 100px;
+    height: 6px;
+    background-color: var(--cor-terciaria);
+    border: none;
+    border-radius: 10px;
+    margin: 0 0 25px 0;
+}
+
+.pagina-identificacao .introducao-identificacao h1 {
+    color: var(--cor-texto);
+    font-size: 32px;
+    margin-bottom: 20px;
+}
+
+.pagina-identificacao .introducao-identificacao p {
+    font-size: 16px;
+    line-height: 1.8;
+    text-align: justify;
+}
+
+.pagina-identificacao .propriedade-identificacao {
+    background-color: var(--cor-clara);
+    padding: 30px;
+    border-radius: 12px;
+    margin-bottom: 35px;
+}
+
+.pagina-identificacao .propriedade-identificacao h2 {
+    color: var(--cor-primaria);
+    font-size: 24px;
+    margin-bottom: 25px;
+    border-bottom: 3px solid var(--cor-terciaria);
+    padding-bottom: 12px;
+}
+
+.pagina-identificacao .propriedade-identificacao h3 {
+    color: var(--cor-secundaria);
+    font-size: 18px;
+    margin-top: 22px;
+    margin-bottom: 8px;
+    padding-left: 12px;
+    border-left: 4px solid var(--cor-terciaria);
+}
+
+.pagina-identificacao .propriedade-identificacao p {
+    color: var(--cor-primaria);
+    font-size: 16px;
+    line-height: 1.7;
+    margin-left: 16px;
+    text-align: justify;
+}
+
+.pagina-identificacao .escala-mohs-identificacao caption {
+    color: var(--cor-primaria);
+    font-size: 24px;
+    font-weight: bold;
+    padding: 15px;
+    caption-side: top;
+}
+
+.pagina-identificacao .escala-mohs-identificacao table {
+    width: 100%;
+    border-collapse: collapse;
+    background-color: var(--cor-fundo);
+    border: none;
+}
+
+.pagina-identificacao .escala-mohs-identificacao thead th {
+    background-color: var(--cor-secundaria);
+    color: var(--cor-texto);
+    padding: 15px;
+}
+
+.pagina-identificacao .escala-mohs-identificacao tbody th {
+    background-color: var(--cor-clara);
+    color: var(--cor-primaria);
+    padding: 12px;
+}
+
+.pagina-identificacao .escala-mohs-identificacao td {
+    background-color: var(--cor-fundo);
+    color: var(--cor-primaria);
+    padding: 12px;
+    text-align: center;
+    border: 1px solid var(--cor-terciaria);
+}
 /* GALERIA: CATÁLOGO */
 .cat > {
     display: flex;
@@ -551,4 +653,24 @@ body:has(.divMinRoc) .amostras img:hover {
     bottom: 1;
     right: 50px;
     width: 27%;
+}
+
+/* RODAPÉ */
+
+ footer {
+    background-color: var(--cor-primaria);
+    color: var(--cor-texto);
+    padding: 25px;
+    text-align: center;
+    border-top: 5px solid var(--cor-terciaria);
+}
+
+footer p {
+    font-size: 14px;
+    color: var(--cor-clara);
+    font-weight: bold;
+    letter-spacing: 0.5px;
+    line-height: 1.8;
+    text-align: center;
+    margin: 0 auto;
 }
