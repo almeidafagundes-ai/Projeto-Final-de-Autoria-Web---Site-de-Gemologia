@@ -616,43 +616,99 @@ body:has(.divMinRoc) .amostras img:hover {
     text-align: center;
     border: 1px solid var(--cor-terciaria);
 }
-/* GALERIA: CATÁLOGO */
-.cat > {
+/*  PÁGINA CATÁLOGO DE PEDRAS PRECIOSAS */
+.pagina-catalogo main {
+    padding: 35px 5%;
+}
+
+.pagina-catalogo .botoes-catalogo {
+    background-color: var(--cor-primaria);
+    color: var(--cor-texto);
+    padding: 35px;
+    border-radius: 12px;
+    border-left: 7px solid var(--cor-terciaria);
+    margin-bottom: 35px;
+}
+
+.pagina-catalogo .botoes-catalogo hr {
+    width: 100px;
+    height: 6px;
+    background-color: var(--cor-terciaria);
+    border: none;
+    border-radius: 10px;
+    margin: 0 0 25px 0;
+}
+
+.pagina-catalogo .botoes-catalogo h1 {
+    color: var(--cor-texto);
+    font-size: 32px;
+    margin-bottom: 15px;
+}
+
+.pagina-catalogo .botoes-catalogo p {
+    font-size: 16px;
+    line-height: 1.7;
+    margin-bottom: 25px;
+}
+
+.pagina-catalogo .opcoes {
     display: flex;
+    gap: 15px;
+    flex-wrap: wrap;
 }
 
-.cat div img {
-    width: 15%;
-    border: 2px;
-    border-color: var(--cor-secundaria);
-    border-radius: 50%;
+.pagina-catalogo .opcoes button {
+    background-color: var(--cor-fundo);
+    color: var(--cor-primaria);
+    border: 2px solid var(--cor-primaria);
+    padding: 12px 25px;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
 }
 
-/* ALTERAÇÕES EM IMAGENS INDIVIDUAIS */
-
-#agua-marinha {
-    position: relative;
-    top: 30px;
-    width: 23%;
+.pagina-catalogo .opcoes button:hover {
+    background-color: var(--cor-primaria);
+    color: var(--cor-texto);
 }
 
-#esmeralda2 {
-    position: relative;
-    top: 25px;
-    width: 20%;
+/* GALERIA: CATÁLOGO */
+.pagina-catalogo .catalogo-system {
+    background-color: var(--cor-clara);
+    padding: 30px;
+    border-radius: 12px;
+    margin-bottom: 35px;
 }
 
-#granada {
-    position: relative;
-    top: 50px;
-    width: 19%;
+.pagina-catalogo .catalogo-system hr {
+    display: none;
 }
 
-#rubi {
-    position: relative;
-    bottom: 1;
-    right: 50px;
-    width: 27%;
+.pagina-catalogo .cat {
+    display: grid;
+    gap: 25px;
+}
+
+.pagina-catalogo .catalogo1,
+.pagina-catalogo .catalogo2 {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+}
+
+.pagina-catalogo .cat img {
+    width: 100%;
+    height: 250px;
+    object-fit: contain;
+    object-position: center;
+    background-color: var(--cor-fundo);
+    border: 3px solid var(--cor-terciaria);
+    border-radius: 12px;
+    padding: 10px;
+    cursor: pointer;
+}
+.pagina-catalogo .cat img:hover {
+    border-color: var(--cor-destaque);
 }
 
 /* RODAPÉ */
