@@ -514,6 +514,42 @@ body:has(.divMinRoc) .amostras img:hover {
     box-shadow: 0 6px 16px rgba(0, 23, 109, 0.18);
 }
 
+.g-minerais1 {
+    display: flex;
+    gap: 10px;
+}
+
+.g-minerais2 {
+    display: flex;
+    gap: 10px;
+}
+
+.g-rochas1 {
+    display: flex;
+    gap: 10px;
+}
+
+.g-rochas2 {
+    display: flex;
+    gap: 10px;
+}
+
+.g-minerais1 img {
+    width: 10%;
+}
+
+.g-minerais2 img {
+    width: 10%;
+}
+
+.g-rochas1 img {
+    width: 10%;
+}
+
+.g-rochas2 img {
+    width: 10%;
+}
+
 /* PÁGINA IDENTIFICAÇÃO DE GEMAS */
 
 .pagina-identificacao main {

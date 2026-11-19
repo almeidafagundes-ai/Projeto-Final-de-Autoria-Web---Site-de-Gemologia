@@ -27,7 +27,43 @@
     </header>
     <main>
         <section>
-
+            <hr>
+            <h2>Fale conosco</h2>
+            <form>
+                <label for="form-nome">Nome: </label>
+                <input type="text" id="form-nome" name="Nome" placeholder="Seu nome" required>
+                <button type="submit">Enviar</button>
+            </form>
+            <form>
+                <label for="form-email">E-mail: </label>
+                <input type="email" id="form-email" name="E-mail" placeholder="seuendereco@email.com" required>
+                <button type="submit">Enviar</button>
+            </form>
+            <form>
+                <label for="form-telefone">Telefone: </label>
+                <input type="tel" id="form-telefone" name="Telefone" placeholder="(DDD) 12345-6789" pattern>
+                <button type="submit">Enviar</button>
+            </form>
+            <form>
+                <label for="form-assunto">Assunto: </label>
+                <select id="form-assunto" name="Assunto">
+                    <option value="">Selecione um assunto</option>
+                    <option value="sugestão">Sugestão para o site</option>
+                    <option value="erro">Reportar um erro</option>
+                    <option value="atualizar">Atualizar um dado</option>
+                    <option value="gemas">Gemas preciosas e semipreciosas</option>
+                    <option value="minerais">Minerais e suas propriedades</option>
+                    <option value="rochas">Rochas e suas classificações</option>
+                    <option value="identificacao">Identificação e características das pedras</option>
+                    <option value="outro">Outro</option>
+                </select>
+                <button type="submit">Enviar</button>
+            </form>
+            <form>
+                <label for="form-mensagem">Mensagem: </label>
+                <textarea id="form-mensagem" name="Mensagem" placeholder="Sua mensagem" required></textarea>
+                <button type="submit">Enviar</button>
+            </form>
         </section>
     </main>
     <footer>
