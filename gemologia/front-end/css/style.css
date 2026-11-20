@@ -2,7 +2,7 @@
 :root {
     --cor-primaria: #00176D;
     --cor-secundaria: #0031E4;
-    --cor-terciaria: #207ADB;
+    --cor-terciaria: #0071E3;
     --cor-clara: #ABE3FF;
     --cor-apoio: #006192;
     --cor-destaque: #4227B8;
@@ -684,6 +684,7 @@ body:has(.divMinRoc) .amostras img:hover {
     text-align: center;
     border: 1px solid var(--cor-terciaria);
 }
+
 /*  PÁGINA CATÁLOGO DE PEDRAS PRECIOSAS */
 .pagina-catalogo main {
     padding: 35px 5%;
@@ -758,7 +759,11 @@ body:has(.divMinRoc) .amostras img:hover {
 }
 
 .pagina-catalogo .catalogo1,
-.pagina-catalogo .catalogo2 {
+.pagina-catalogo .catalogo2,
+.pagina-catalogo .catalogo3,
+.pagina-catalogo .catalogo4,
+.pagina-catalogo .catalogo5,
+.pagina-catalogo .catalogo6 {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     gap: 20px;
