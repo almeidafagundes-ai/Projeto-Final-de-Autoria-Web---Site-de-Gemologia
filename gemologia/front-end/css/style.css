@@ -497,6 +497,7 @@ body:has(.divMinRoc) main > section:first-child p {
 .pagina-minerais .g-rochas2 {
     display: contents;
 }
+
 .pagina-minerais .divMinerais li,
 .pagina-minerais .divRochas li {
     background-color: var(--cor-fundo);
