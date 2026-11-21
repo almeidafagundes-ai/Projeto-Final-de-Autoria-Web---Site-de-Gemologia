@@ -858,6 +858,13 @@ body:has(.divMinRoc) main > section:first-child p {
     border-color: var(--cor-destaque);
 }
 
+/* FORMULÁRIO */
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
 /* RODAPÉ */
 
  footer {
