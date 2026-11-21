@@ -31,59 +31,276 @@
             <h1>Catálogo de pedras preciosas</h1>
             <p>Observe a beleza da natureza de diversas cores e formas.</p>
             <div class="opcoes">
-                <button type="submit" id="botao1">Todas</button>
-                <button type="submit" id="botao2">Azuis</button>
-                <button type="submit" id="botao3">Verdes</button>
-                <button type="submit" id="botao4">Vermelhas</button>
-                <button type="submit" id="botao5">Violetas</button>
-                <button type="submit" id="botao6">Brancas</button>
+                <button type="submit" id="botao1" aria-pressed="true">Todas</button>
+                <button type="submit" id="botao2" aria-pressed="true">Azuis</button>
+                <button type="submit" id="botao3" aria-pressed="true">Verdes</button>
+                <button type="submit" id="botao4" aria-pressed="true">Vermelhas</button>
+                <button type="submit" id="botao5" aria-pressed="true">Violetas</button>
+                <button type="submit" id="botao6" aria-pressed="true">Brancas</button>
             </div>
         </section>
 
         <section class="catalogo-system">
             <hr>
             <div class="cat">
-                <div class="catalogo1">
-                    <img src="imagens/agua-marinha1.jpe" alt="Água Marinha" class="azul">
-                    <img src="imagens/safira.jpe" alt="Safira" class="azul">
-                    <img src="imagens/esmeralda2.jpe" alt="Esmeralda" class="verde">
-                    <img src="imagens/jade.avif" alt="Jade" class="verde">
-                </div>
-                <div class="catalogo2">
-                    <img src="imagens/peridoto1.png" alt="Peridoto" class="verde">
-                    <img src="imagens/cornalina1.jpe" alt="Cornalina" class="vermelho">
-                    <img src="imagens/granada-vermelha1.png" alt="Granada Vermelha" class="vermelho">
-                    <img src="imagens/rubi1.png" alt="Rubi" class="vermelho">
-                </div>
-                <div class="catalogo3">
-                    <img src="imagens/tsavorita.jpg" alt="Tsavorita" class="verde">
-                    <img src="imagens/diopsidio-cromo.jpg" alt="Diopsídio-Cromo" class="verde">
-                    <img src="imagens/moldavita.png" alt="Moldavita" class="verde">
-                    <img src="imagens/espinelio-vermelho.png" alt="Espinélio Vermelho" class="vermelho">
-                </div>
-                <div class="catalogo4">
-                    <img src="imagens/rubelita.webp" alt="Rubelita" class="vermelho">
-                    <img src="imagens/rodocrosita.png" alt="Rodocrosita" class="Vermelho">
-                    <img src="imagens/turquesa.webp" alt="Turquesa" class="azul">
-                    <img src="imagens/cianita-azul.png" alt="Cianita Azul" class="azul">
-                </div>
-                <div class="catalogo5">
-                    <img src="imagens/larimar.png" alt="Larimar" class="azul">
-                    <img src="imagens/benitoita.png" alt="Benitoíta" class="azul">
-                    <img src="imagens/ametista2.png" alt="Ametista" class="violeta">
-                    <img src="imagens/tanzanita-violeta.png" alt="Tanzanita Violeta" class="violeta">
-                </div>
-                <div class="catalogo6">
-                    <img src="imagens/fluorita-violeta.jpg" alt="Fluorita Violeta" class="violeta">
-                    <img src="imagens/diamante2.webp" alt="Diamante" class="branco">
-                    <img src="imagens/quartzo-leitoso.webp" alt="Quartzo Leitoso" class="branco">
-                    <img src="imagens/pedra-da-lua branca.png" alt="Pedra-da-lua Branca" class="branco">
-                </div>
+
+                <!-- PEDRAS AZUIS -->
+                <section class="categoria-pedras categoria-azul">
+                    <h2>Pedras Azuis</h2>
+                    <div class="catalogo1">
+                        <div class="pedra-card">
+                            <button type="button" class="pedra-card__botao" aria-expanded="false">
+                                <img src="imagens/agua-marinha1.jpe" alt="Água-Marinha" class="azul">
+                            </button>
+                            <div class="pedra-card__info">
+                                <p>A Água-Marinha chama atenção pelo seu tom azul suave e pela aparência cristalina. Seu nome lembra a cor do mar.</p>
+                                <a href="https://www.gemsociety.org/article/aquamarine-jewelry-and-gemstone-information/" target="_blank" rel="noopener noreferrer">Mais informações no IGS</a>
+                            </div>
+                        </div>
+                        <div class="pedra-card">
+                            <button type="button" class="pedra-card__botao" aria-expanded="false">
+                                <img src="imagens/safira2.png" alt="Safira" class="azul">
+                            </button>
+                            <div class="pedra-card__info">
+                                <p>A Safira é conhecida principalmente por sua cor azul intensa, mas também pode aparecer em outras cores. É uma das gemas mais resistentes.</p>
+                                <a href="https://www.gemsociety.org/article/sapphire-jewelry-and-gemstone-information/" target="_blank" rel="noopener noreferrer">Mais informações no IGS</a>
+                            </div>
+                        </div>
+                        <div class="pedra-card">
+                            <button type="button" class="pedra-card__botao" aria-expanded="false">
+                                <img src="imagens/turquesa.webp" alt="Turquesa" class="azul">
+                            </button>
+                            <div class="pedra-card__info">
+                                <p>A Turquesa tem uma coloração que varia entre o azul e o verde. É muito usada em joias e aparece em diferentes culturas há milhares de anos.</p>
+                                <a href="https://www.gemsociety.org/article/turquoise-jewelry-gem-information/" target="_blank" rel="noopener noreferrer">Mais informações no IGS</a>
+                            </div>
+                        </div>
+                        <div class="pedra-card">
+                            <button type="button" class="pedra-card__botao" aria-expanded="false">
+                                <img src="imagens/cianita2.png" alt="Cianita Azul" class="azul">
+                            </button>
+                            <div class="pedra-card__info">
+                                <p>A Cianita Azul costuma formar cristais compridos e tem uma cor que lembra o céu. Uma característica curiosa é que sua dureza muda conforme a direção do cristal.</p>
+                                <a href="https://www.gemsociety.org/article/kyanite-jewelry-and-gemstone-information/" target="_blank" rel="noopener noreferrer">Mais informações no IGS</a>
+                            </div>
+                        </div>
+                        <div class="pedra-card">
+                            <button type="button" class="pedra-card__botao" aria-expanded="false">
+                                <img src="imagens/larimar.png" alt="Larimar" class="azul">
+                            </button>
+                            <div class="pedra-card__info">
+                                <p>O Larimar é uma pedra azul encontrada na República Dominicana. Seus desenhos claros e azulados lembram as ondas e a água do mar.</p>
+                                <a href="https://www.gemsociety.org/article/pectolite-jewelry-and-gemstone-information/" target="_blank" rel="noopener noreferrer">Mais informações no IGS</a>
+                            </div>
+                        </div>
+                        <div class="pedra-card">
+                            <button type="button" class="pedra-card__botao" aria-expanded="false">
+                                <img src="imagens/benitoita.png" alt="Benitoíta" class="azul">
+                            </button>
+                            <div class="pedra-card__info">
+                                <p>A Benitoíta é uma gema rara que se destaca pelo azul brilhante. Foi descoberta na Califórnia e é bastante procurada por colecionadores.</p>
+                                <a href="https://www.gemsociety.org/article/benitoite-jewelry-and-gemstone-information/" target="_blank" rel="noopener noreferrer">Mais informações no IGS</a>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- PEDRAS VERDES -->
+                <section class="categoria-pedras categoria-verde">
+                    <h2>Pedras Verdes</h2>
+                    <div class="catalogo2">
+                        <div class="pedra-card">
+                            <button type="button" class="pedra-card__botao" aria-expanded="false">
+                                <img src="imagens/esmeralda2.jpe" alt="Esmeralda" class="verde">
+                            </button>
+                            <div class="pedra-card__info">
+                                <p>A Esmeralda é famosa pelo seu verde marcante. Pequenas inclusões são comuns nessa gema e ajudam a contar um pouco da sua história natural.</p>
+                                <a href="https://www.gemsociety.org/article/emerald-jewelry-and-gemstone-information/" target="_blank" rel="noopener noreferrer">Mais informações no IGS</a>
+                            </div>
+                        </div>
+                        <div class="pedra-card">
+                            <button type="button" class="pedra-card__botao" aria-expanded="false">
+                                <img src="imagens/jade.avif" alt="Jade" class="verde">
+                            </button>
+                            <div class="pedra-card__info">
+                                <p>A Jade pode ser jadeíta ou nefrita. É conhecida pela aparência elegante e pelo uso tradicional em esculturas, objetos decorativos e joias.</p>
+                                <a href="https://www.gemsociety.org/article/jadeite-jewelry-and-gemstone-information/" target="_blank" rel="noopener noreferrer">Mais informações no IGS</a>
+                            </div>
+                        </div>
+                        <div class="pedra-card">
+                            <button type="button" class="pedra-card__botao" aria-expanded="false">
+                                <img src="imagens/peridoto1.png" alt="Peridoto" class="verde">
+                            </button>
+                            <div class="pedra-card__info">
+                                <p>O Peridoto tem um verde característico, às vezes com um toque amarelado. É uma das poucas gemas que aparece naturalmente em apenas uma faixa de cor.</p>
+                                <a href="https://www.gemsociety.org/article/peridot-jewelry-and-gemstone-information/" target="_blank" rel="noopener noreferrer">Mais informações no IGS</a>
+                            </div>
+                        </div>
+                        <div class="pedra-card">
+                            <button type="button" class="pedra-card__botao" aria-expanded="false">
+                                <img src="imagens/tsavorita.jpg" alt="Tsavorita" class="verde">
+                            </button>
+                            <div class="pedra-card__info">
+                                <p>A Tsavorita é uma granada de verde vivo e brilho intenso. Mesmo sendo menos conhecida que a esmeralda, chama bastante atenção nas joias.</p>
+                                <a href="https://www.gemsociety.org/article/tsavorite/" target="_blank" rel="noopener noreferrer">Mais informações no IGS</a>
+                            </div>
+                        </div>
+                        <div class="pedra-card">
+                            <button type="button" class="pedra-card__botao" aria-expanded="false">
+                                <img src="imagens/diopsidio-cromo.jpg" alt="Diopsídio-Cromo" class="verde">
+                            </button>
+                            <div class="pedra-card__info">
+                                <p>O Diopsídio-Cromo apresenta um verde profundo, causado pela presença de cromo. É uma gema bonita, embora não seja tão conhecida pelo público.</p>
+                                <a href="https://www.gemsociety.org/article/chrome-diopside-faceting-information/" target="_blank" rel="noopener noreferrer">Mais informações no IGS</a>
+                            </div>
+                        </div>
+                        <div class="pedra-card">
+                            <button type="button" class="pedra-card__botao" aria-expanded="false">
+                                <img src="imagens/moldavita.png" alt="Moldavita" class="verde">
+                            </button>
+                            <div class="pedra-card__info">
+                                <p>A Moldavita tem uma aparência verde e irregular. Ela se formou há milhões de anos, durante o impacto de um meteorito na Terra.</p>
+                                <a href="https://www.gemsociety.org/article/moldavite-jewelry-and-gemstone-information/" target="_blank" rel="noopener noreferrer">Mais informações no IGS</a>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- PEDRAS VERMELHAS -->
+                <section class="categoria-pedras categoria-vermelha">
+                    <h2>Pedras Vermelhas</h2>
+                    <div class="catalogo3">
+                        <div class="pedra-card">
+                            <button type="button" class="pedra-card__botao" aria-expanded="false">
+                                <img src="imagens/cornalina1.jpe" alt="Cornalina" class="vermelho">
+                            </button>
+                            <div class="pedra-card__info">
+                                <p>A Cornalina tem tons quentes, que vão do laranja ao vermelho. É uma variedade de calcedônia muito usada em peças decorativas e joias.</p>
+                                <a href="https://www.gemsociety.org/article/carnelian-gem-information/" target="_blank" rel="noopener noreferrer">Mais informações no IGS</a>
+                            </div>
+                        </div>
+                        <div class="pedra-card">
+                            <button type="button" class="pedra-card__botao" aria-expanded="false">
+                                <img src="imagens/granada-vermelha1.png" alt="Granada Vermelha" class="vermelho">
+                            </button>
+                            <div class="pedra-card__info">
+                                <p>A Granada Vermelha é conhecida pelo brilho e pela cor intensa. Apesar do nome, granada é um grupo de minerais que pode ter várias cores.</p>
+                                <a href="https://www.gemsociety.org/article/garnet-jewelry-and-gemstone-information/" target="_blank" rel="noopener noreferrer">Mais informações no IGS</a>
+                            </div>
+                        </div>
+                        <div class="pedra-card">
+                            <button type="button" class="pedra-card__botao" aria-expanded="false">
+                                <img src="imagens/rubi1.png" alt="Rubi" class="vermelho">
+                            </button>
+                            <div class="pedra-card__info">
+                                <p>O Rubi é uma das gemas vermelhas mais conhecidas. Sua cor intensa vem principalmente do cromo presente em sua composição.</p>
+                                <a href="https://www.gemsociety.org/article/ruby-jewelry-and-gemstone-information/" target="_blank" rel="noopener noreferrer">Mais informações no IGS</a>
+                            </div>
+                        </div>
+                        <div class="pedra-card">
+                            <button type="button" class="pedra-card__botao" aria-expanded="false">
+                                <img src="imagens/espinelio-vermelho.png" alt="Espinélio Vermelho" class="vermelho">
+                            </button>
+                            <div class="pedra-card__info">
+                                <p>O Espinélio Vermelho tem brilho forte e uma aparência que lembra o rubi. Durante muito tempo, algumas peças históricas foram confundidas com essa outra gema.</p>
+                                <a href="https://www.gemsociety.org/article/spinel-jewelry-and-gemstone-information/" target="_blank" rel="noopener noreferrer">Mais informações no IGS</a>
+                            </div>
+                        </div>
+                        <div class="pedra-card">
+                            <button type="button" class="pedra-card__botao" aria-expanded="false">
+                                <img src="imagens/rubelita.webp" alt="Rubelita" class="vermelho">
+                            </button>
+                            <div class="pedra-card__info">
+                                <p>A Rubelita é uma turmalina que pode variar do rosa ao vermelho. Sua cor e brilho fazem dela uma escolha marcante para joias.</p>
+                                <a href="https://www.gemsociety.org/article/rubellite-jewelry-and-gemstone-information/" target="_blank" rel="noopener noreferrer">Mais informações no IGS</a>
+                            </div>
+                        </div>
+                        <div class="pedra-card">
+                            <button type="button" class="pedra-card__botao" aria-expanded="false">
+                                <img src="imagens/rodocrosita.png" alt="Rodocrosita" class="vermelho">
+                            </button>
+                            <div class="pedra-card__info">
+                                <p>A Rodocrosita costuma apresentar tons de rosa e desenhos em faixas. É muito apreciada por quem gosta de minerais com padrões naturais.</p>
+                                <a href="https://www.gemsociety.org/article/rhodochrosite-jewelry-and-gemstone-information/" target="_blank" rel="noopener noreferrer">Mais informações no IGS</a>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- PEDRAS VIOLETAS -->
+                <section class="categoria-pedras categoria-violeta">
+                    <h2>Pedras Violetas</h2>
+                    <div class="catalogo4">
+                        <div class="pedra-card">
+                            <button type="button" class="pedra-card__botao" aria-expanded="false">
+                                <img src="imagens/ametista2.png" alt="Ametista" class="violeta">
+                            </button>
+                            <div class="pedra-card__info">
+                                <p>A Ametista é uma variedade violeta do quartzo. Sua cor pode variar de um lilás claro até um roxo bem intenso.</p>
+                                <a href="https://www.gemsociety.org/article/amethyst-jewelry-and-gemstone-information/" target="_blank" rel="noopener noreferrer">Mais informações no IGS</a>
+                            </div>
+                        </div>
+                        <div class="pedra-card">
+                            <button type="button" class="pedra-card__botao" aria-expanded="false">
+                                <img src="imagens/tanzanita-violeta.png" alt="Tanzanita Violeta" class="violeta">
+                            </button>
+                            <div class="pedra-card__info">
+                                <p>A Tanzanita pode mostrar tons de azul e violeta dependendo da luz. É encontrada em uma região específica da Tanzânia.</p>
+                                <a href="https://www.gemsociety.org/article/tanzanite-jewelry-and-gemstone-information/" target="_blank" rel="noopener noreferrer">Mais informações no IGS</a>
+                            </div>
+                        </div>
+                        <div class="pedra-card">
+                            <button type="button" class="pedra-card__botao" aria-expanded="false">
+                                <img src="imagens/fluorita-violeta.jpg" alt="Fluorita Violeta" class="violeta">
+                            </button>
+                            <div class="pedra-card__info">
+                                <p>A Fluorita Violeta pode formar cristais bem definidos e apresentar diferentes tons de roxo. É bastante apreciada por colecionadores.</p>
+                                <a href="https://www.gemsociety.org/article/fluorite-jewelry-gemstone-information/" target="_blank" rel="noopener noreferrer">Mais informações no IGS</a>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- PEDRAS BRANCAS -->
+                <section class="categoria-pedras categoria-branca">
+                    <h2>Pedras Brancas</h2>
+                    <div class="catalogo5">
+                        <div class="pedra-card">
+                            <button type="button" class="pedra-card__botao" aria-expanded="false">
+                                <img src="imagens/diamante2.webp" alt="Diamante" class="branco">
+                            </button>
+                            <div class="pedra-card__info">
+                                <p>O Diamante é conhecido pelo brilho intenso e pela grande resistência. Embora seja famoso na forma incolor, também pode apresentar outras cores.</p>
+                                <a href="https://www.gemsociety.org/article/diamond/" target="_blank" rel="noopener noreferrer">Mais informações no IGS</a>
+                            </div>
+                        </div>
+                        <div class="pedra-card">
+                            <button type="button" class="pedra-card__botao" aria-expanded="false">
+                                <img src="imagens/quartzo-leitoso.webp" alt="Quartzo Leitoso" class="branco">
+                            </button>
+                            <div class="pedra-card__info">
+                                <p>O Quartzo Leitoso tem uma aparência branca e opaca, causada por pequenas inclusões que deixam o cristal com aspecto de leite.</p>
+                                <a href="https://www.gemsociety.org/article/quartz-jewelry-and-gemstone-information/" target="_blank" rel="noopener noreferrer">Mais informações no IGS</a>
+                            </div>
+                        </div>
+                        <div class="pedra-card">
+                            <button type="button" class="pedra-card__botao" aria-expanded="false">
+                                <img src="imagens/pedra-da-lua branca.png" alt="Pedra-da-Lua Branca" class="branco">
+                            </button>
+                            <div class="pedra-card__info">
+                                <p>A Pedra-da-Lua é conhecida por um brilho suave que parece se movimentar na superfície quando a pedra muda de posição.</p>
+                                <a href="https://www.gemsociety.org/article/moonstone-jewelry-gem-information/" target="_blank" rel="noopener noreferrer">Mais informações no IGS</a>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
             </div>
         </section>
+
     </main>
     <footer>
-        <p>Projeto acadêmico • IFRN © 2026 CEAG.com. Todos os direitos reservados</p>
+        <p>Projeto acadêmico • IFRN © 2026 CEAG.com. Todos os direitos reservados.</p>
     </footer>
 </body>
 </html>

@@ -26,18 +26,18 @@
         </div>
     </header>
     <main>
-        <section>
-            <hr>
+        <section class="sobre-contato">
+            <hr class="sobre-linha">
             <h2>Fale conosco</h2>
-            <form method="POST">
-                <label for="form-nome">Nome: </label>
-                <input type="text" id="form-nome" name="Nome" placeholder="Seu nome" required>
-                <label for="form-email">E-mail: </label>
-                <input type="email" id="form-email" name="E-mail" placeholder="seuendereco@email.com" required>
-                <label for="form-telefone">Telefone: </label>
-                <input type="tel" id="form-telefone" name="Telefone" placeholder="(DDD) 12345-6789" pattern>
-                <label for="form-assunto">Assunto: </label>
-                <select id="form-assunto" name="Assunto">
+            <form class="sobre-form" method="POST">
+                <label class="sobre-label" for="form-nome">Nome: </label>
+                <input class="sobre-campo" type="text" id="form-nome" name="Nome" placeholder="Seu nome" required>
+                <label class="sobre-label" for="form-email">E-mail: </label>
+                <input class="sobre-campo" type="email" id="form-email" name="E-mail" placeholder="seuendereco@email.com" required>
+                <label class="sobre-label" for="form-telefone">Telefone: </label>
+                <input class="sobre-campo" type="tel" id="form-telefone" name="Telefone" placeholder="(DDD) 12345-6789" pattern>
+                <label class="sobre-label" for="form-assunto">Assunto: </label>
+                <select class="sobre-campo" id="form-assunto" name="Assunto">
                     <option value="">Selecione um assunto</option>
                     <option value="sugestão">Sugestão para o site</option>
                     <option value="erro">Reportar um erro</option>
@@ -48,14 +48,14 @@
                     <option value="identificacao">Identificação e características das pedras</option>
                     <option value="outro">Outro</option>
                 </select>
-                <label for="form-mensagem">Mensagem: </label>
-                <textarea id="form-mensagem" name="Mensagem" placeholder="Sua mensagem" required></textarea>
-                <button type="submit">Enviar tudo</button>
+                <label class="sobre-label" for="form-mensagem">Mensagem: </label>
+                <textarea class="sobre-campo sobre-mensagem" id="form-mensagem" name="Mensagem" placeholder="Sua mensagem" required></textarea>
+                <button class="sobre-botao" type="submit">Enviar tudo</button>
             </form>
         </section>
     </main>
     <footer>
-        <p>Projeto acadêmico • IFRN © 2026 CEAG.com. Todos os direitos reservados</p>
+        <p>Projeto acadêmico • IFRN © 2026 CEAG.com. Todos os direitos reservados.</p>
     </footer>
 </body>
 </html>

@@ -321,130 +321,187 @@ header {
 /* PÁGINA GEOLOGIA NO BRASIL */
 .pagina-brasil main {
     width: 90%;
-    max-width: 1100px;
-    margin: 45px auto;
+    max-width: 1200px;
+    margin: 50px auto;
 }
-/* APRESENTAÇÃO */
-.intro-brasil {
-    background-color: var(--cor-clara);
+
+.intro-brasil, .linha-tempo, .estados-produtores {
+    margin-bottom: 45px;
     padding: 35px;
-    border-radius: 12px;
-    border-left: 6px solid var(--cor-secundaria);
+    background-color: var(--cor-clara);
+    border: 2px solid var(--cor-terciaria);
+    border-radius: 20px;
+    box-sizing: border-box;
+}
+
+.pagina-brasil main hr {
+    width: 100px;
+    height: 4px;
+    margin: 0 auto 25px;
+    border: none;
+    border-radius: 10px;
+    background-color: var(--cor-terciaria);
+}
+
+.intro-brasil h1, .linha-tempo h2, .estados-produtores h2 {
+    color: var(--cor-primaria);
+    font-family: var(--fonte-principal);
+    text-align: center;
+    margin: 0 0 25px;
 }
 
 .intro-brasil h1 {
-    margin-top: 0;
+    font-size: 32px;
+}
+
+.linha-tempo h2,
+.estados-produtores h2 {
+    font-size: 28px;
 }
 
 .intro-brasil p {
-    max-width: 850px;
-}
-
-/* LINHA DO TEMPO */
-
-.linha-tempo {
-    padding: 20px;
+    color: var(--cor-primaria);
+    font-family: var(--fonte-principal);
+    font-size: 16px;
+    line-height: 1.8;
+    text-align: justify;
+    margin: 0;
 }
 
 .linha-tempo ul {
+    position: relative;
     list-style: none;
-    padding-left: 25px;
-    border-left: 3px solid var(--cor-terciaria);
+    margin: 0;
+    padding: 10px 0 10px 35px;
+}
+
+.linha-tempo ul::before {
+    content: "";
+    position: absolute;
+    top: 15px;
+    bottom: 15px;
+    left: 9px;
+    width: 3px;
+    background-color: var(--cor-terciaria);
+    border-radius: 10px;
 }
 
 .linha-tempo li {
     position: relative;
-    background-color: var(--cor-clara);
-    padding: 18px 20px;
-    margin-bottom: 18px;
-    border-radius: 8px;
-    line-height: 1.6;
-    transition: 0.3s;
+    margin-bottom: 25px;
+    padding: 20px;
+    background-color: var(--cor-fundo);
+    border: 1px solid var(--cor-terciaria);
+    border-radius: 12px;
+    color: var(--cor-primaria);
+    font-family: var(--fonte-principal);
+    font-size: 16px;
+    line-height: 1.7;
 }
 
-.linha-tempo li:hover {
-    background-color: var(--cor-terciaria);
-    color: var(--cor-texto);
+.linha-tempo li:last-child {
+    margin-bottom: 0;
 }
 
 .linha-tempo li::before {
     content: "";
     position: absolute;
-    width: 13px;
-    height: 13px;
+    top: 25px;
+    left: -35px;
+    width: 15px;
+    height: 15px;
     background-color: var(--cor-secundaria);
+    border: 3px solid var(--cor-fundo);
     border-radius: 50%;
-    left: -33px;
-    top: 22px;
 }
 
-.linha-tempo strong {
+.linha-tempo li strong {
+    display: block;
+    margin-bottom: 8px;
     color: var(--cor-secundaria);
-}
-
-.linha-tempo li:hover strong {
-    color: var(--cor-texto);
-}
-
-/* ESTADOS PRODUTORES */
-.estados-produtores {
-    background-color: var(--cor-clara);
-    padding: 35px;
-    border-radius: 12px;
+    font-size: 18px;
 }
 
 .estados-produtores ul {
     display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    gap: 18px;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 20px;
     list-style: none;
+    margin: 0;
     padding: 0;
 }
 
 .estados-produtores li {
-    background-color: var(--cor-fundo);
     padding: 20px;
-    border-radius: 8px;
-    border-left: 5px solid var(--cor-apoio);
-    line-height: 1.6;
-    transition: 0,3s;
+    background-color: var(--cor-fundo);
+    border: 1px solid var(--cor-terciaria);
+    border-radius: 12px;
+    color: var(--cor-primaria);
+    font-family: var(--fonte-principal);
+    font-size: 16px;
+    line-height: 1.7;
 }
 
-.estados-produtores li:hover {
-    border-left-color: var(--cor-destaque);
-}
-
-.estados-produtores strong {
+.estados-produtores li strong {
+    display: block;
+    margin-bottom: 8px;
     color: var(--cor-secundaria);
+    font-size: 18px;
 }
 
 /* PÁGINA MINERAIS E ROCHAS */
-body:has(.divMinRoc) main > section:first-child {
+.intro-minerais {
+    width: 85%;
+    max-width: 1100px;
+    margin: 50px auto;
+    padding: 35px 45px;
     background-color: var(--cor-primaria);
-    color: var(--cor-texto);
-    padding: 40px;
-    margin: 35px auto;
-    border-radius: 16px;
+    border: 1px solid var(--cor-terciaria);
+    border-left: 8px solid var(--cor-secundaria);
+    border-radius: 18px;
+    box-sizing: border-box;
 }
-body:has(.divMinRoc) main > section:first-child hr {
-    width: 65px;
-    height: 4px;
-    background-color: var(--cor-clara);
+
+.intro-minerais hr {
+    width: 120px;
+    height: 5px;
+    margin: 0 0 30px;
     border: none;
-    border-radius: 5px;
-    margin: 0 0 22px;
+    border-radius: 10px;
+    background-color: var(--cor-clara);
 }
-.pagina-minerais main > section:first-child h1 {
+
+.intro-minerais hr::after {
+    content: "";
     display: block;
-    color: var(--cor-texto);
-    font-size: 32px;
-    margin: 20px 0;
+    width: 40px;
+    height: 5px;
+    margin-left: 0;
+    border-radius: 10px;
+    background-color: var(--cor-terciaria);
 }
-body:has(.divMinRoc) main > section:first-child p {
+
+.intro-minerais h1 {
+    color: var(--cor-texto);
+    font-family: var(--fonte-principal);
+    font-size: 32px;
+    text-align: left;
+    margin: 0 0 25px;
+}
+
+.intro-minerais p {
+    color: var(--cor-texto);
+    font-family: var(--fonte-principal);
     font-size: 16px;
     line-height: 1.8;
     text-align: justify;
+    margin: 0;
 }
+
+.intro-minerais strong {
+    color: var(--cor-clara);
+}
+
 .pagina-minerais .divMinRoc {
     display: flex;
     gap: 30px;
@@ -620,6 +677,53 @@ body:has(.divMinRoc) main > section:first-child p {
     left: 0;
     z-index: 1;
 }
+
+.pagina-minerais .opcoes-amostras {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 15px;
+    margin-bottom: 30px;
+}
+
+.pagina-minerais .opcoes-amostras button {
+    background-color: var(--cor-fundo);
+    color: var(--cor-primaria);
+    border: 2px solid var(--cor-primaria);
+    border-radius: 10px;
+    padding: 12px 28px;
+    font-family: var(--fonte-principal);
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s, color 0.3s, border-color 0.3s, box-shadow 0.3s;
+}
+
+.pagina-minerais .opcoes-amostras button[aria-pressed="true"] {
+    background-color: var(--cor-primaria);
+    color: var(--cor-texto);
+    border-color: var(--cor-primaria);
+}
+
+.pagina-minerais .opcoes-amostras button:hover {
+    background-color: var(--cor-secundaria);
+    color: var(--cor-texto);
+    border-color: var(--cor-secundaria);
+    box-shadow: 0 4px 10px var(--cor-clara);
+}
+
+.pagina-minerais .opcoes-amostras button:focus-visible {
+    outline: 3px solid var(--cor-terciaria);
+    outline-offset: 4px;
+}
+
+.pagina-minerais .opcoes-amostras button:active {
+    background-color: var(--cor-destaque);
+    border-color: var(--cor-destaque);
+    color: var(--cor-texto);
+}
+
 .g-minerais1 {
     display: flex;
     gap: 10px;
@@ -816,48 +920,210 @@ body:has(.divMinRoc) main > section:first-child p {
 }
 
 /* GALERIA: CATÁLOGO */
-.pagina-catalogo .catalogo-system {
+.catalogo-system {
+    width: 90%;
+    max-width: 1200px;
+    margin: 50px auto;
+    padding: 40px;
     background-color: var(--cor-clara);
-    padding: 30px;
-    border-radius: 12px;
-    margin-bottom: 35px;
+    border: 3px solid var(--cor-terciaria);
+    border-radius: 25px;
+    box-sizing: border-box;
 }
 
-.pagina-catalogo .catalogo-system hr {
-    display: none;
+.catalogo-system hr {
+    width: 70%;
+    height: 3px;
+    margin: 0 auto 35px;
+    border: none;
+    border-radius: 10px;
+    background-color: var(--cor-terciaria);
 }
 
-.pagina-catalogo .cat {
-    display: grid;
+.cat {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 45px;
+    padding: 30px 0;
+}
+
+.categoria-pedras {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
     gap: 25px;
 }
 
-.pagina-catalogo .catalogo1,
-.pagina-catalogo .catalogo2,
-.pagina-catalogo .catalogo3,
-.pagina-catalogo .catalogo4,
-.pagina-catalogo .catalogo5,
-.pagina-catalogo .catalogo6 {
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    gap: 20px;
+.categoria-pedras h2 {
+    color: var(--cor-primaria);
+    font-family: var(--fonte-principal);
+    font-size: 28px;
+    text-align: center;
+    margin: 0;
+    padding-bottom: 15px;
+    border-bottom: 2px solid var(--cor-terciaria);
 }
 
-.pagina-catalogo .cat img {
+.catalogo1, .catalogo2, .catalogo3, .catalogo4, .catalogo5 {
     width: 100%;
-    height: 250px;
-    object-fit: contain;
-    object-position: center;
+    display: grid;
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+    gap: 30px;
+}
+
+.pedra-card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-width: 0;
+    padding: 15px;
     background-color: var(--cor-fundo);
-    border: 3px solid var(--cor-terciaria);
-    border-radius: 12px;
-    padding: 10px;
+    border: 1px solid var(--cor-clara);
+    border-radius: 15px;
+    transition: box-shadow 0.3s ease;
+}
+
+.pedra-card:hover {
+    box-shadow: 0 0 12px var(--cor-clara);
+}
+
+.pedra-card__botao {
+    display: block;
+    width: 100%;
+    padding: 0;
+    border: none;
+    background: transparent;
     cursor: pointer;
 }
-.pagina-catalogo .cat img:hover {
-    border-color: var(--cor-destaque);
+
+.pedra-card__botao img {
+    display: block;
+    width: 100%;
+    height: 190px;
+    object-fit: contain;
+    transition: opacity 0.3s ease;
 }
 
+.pedra-card__botao:hover img {
+    opacity: 0.85;
+}
+
+.pedra-card__info {
+    width: 100%;
+    box-sizing: border-box;
+    margin-top: 15px;
+    padding: 15px;
+    background-color: var(--cor-fundo);
+    border: 1px solid var(--cor-clara);
+    border-radius: 10px;
+    color: var(--cor-primaria);
+    font-family: var(--fonte-principal);
+    font-size: 14px;
+    line-height: 1.5;
+    display: none;
+}
+
+.pedra-card__info p {
+    margin: 0;
+}
+
+.pedra-card__info a {
+    display: inline-block;
+    margin-top: 10px;
+    color: var(--cor-secundaria);
+    font-weight: bold;
+    text-decoration: underline;
+}
+
+.pedra-card__info a:hover {
+    color: var(--cor-terciaria);
+}
+
+/* PÁGINA SOBRE O PROJETO */
+.sobre-contato {
+    width: 85%;
+    max-width: 850px;
+    margin: 50px auto;
+    padding: 35px;
+    background-color: var(--cor-clara);
+    border: 2px solid var(--cor-terciaria);
+    border-radius: 20px;
+    box-sizing: border-box;
+}
+
+.sobre-contato h2 {
+    color: var(--cor-primaria);
+    font-family: var(--fonte-principal);
+    font-size: 30px;
+    text-align: center;
+    margin: 0 auto 30px;
+    width: 100%;
+}
+
+.sobre-linha {
+    width: 100px;
+    height: 4px;
+    margin: 0 auto 30px;
+    border: none;
+    border-radius: 10px;
+    background-color: var(--cor-terciaria);
+}
+
+.sobre-form {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.sobre-label {
+    color: var(--cor-primaria);
+    font-family: var(--fonte-principal);
+    font-size: 16px;
+    font-weight: bold;
+    margin-top: 8px;
+}
+
+.sobre-campo {
+    width: 100%;
+    padding: 12px;
+    box-sizing: border-box;
+    border: 1px solid var(--cor-terciaria);
+    border-radius: 8px;
+    background-color: var(--cor-fundo);
+    color: var(--cor-primaria);
+    font-family: var(--fonte-principal);
+    font-size: 15px;
+    outline: none;
+}
+
+.sobre-campo:focus {
+    border: 2px solid var(--cor-secundaria);
+}
+
+.sobre-mensagem {
+    min-height: 150px;
+    resize: vertical;
+}
+
+.sobre-botao {
+    align-self: center;
+    margin-top: 20px;
+    padding: 13px 35px;
+    border: none;
+    border-radius: 10px;
+    background-color: var(--cor-primaria);
+    color: var(--cor-texto);
+    font-family: var(--fonte-principal);
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.sobre-botao:hover {
+    background-color: var(--cor-secundaria);
+}
 /* FORMULÁRIO */
 form {
     display: flex;
