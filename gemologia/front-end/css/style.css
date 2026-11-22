@@ -1041,6 +1041,56 @@ header {
 }
 
 /* PÁGINA SOBRE O PROJETO */
+.sobre-informacoes {
+    width: 85%;
+    max-width: 1100px;
+    margin: 60px auto;
+    padding: 40px 45px;
+    background-color: var(--cor-primaria);
+    color: var(--cor-texto);
+    border: 1px solid var(--cor-terciaria);
+    border-left: 8px solid var(--cor-secundaria);
+    border-radius: 16px;
+}
+
+.sobre-informacoes hr {
+    width: 140px;
+    height: 4px;
+    margin: 0 0 30px;
+    background-color: var(--cor-secundaria);
+    border: none;
+    border-radius: 10px;
+}
+
+.sobre-informacoes h1 {
+    margin: 0 0 25px;
+    color: var(--cor-texto);
+    font-size: 2rem;
+    text-align: left;
+}
+
+.sobre-informacoes p {
+    margin: 0;
+    color: var(--cor-texto);
+    font-size: 1.05rem;
+    line-height: 1.9;
+    text-align: justify;
+}
+
+.sobre-informacoes p strong {
+    color: var(--cor-clara);
+    font-weight: 700;
+    background-color: var(--cor-secundaria);
+    padding: 2px 6px;
+    border-radius: 4px;
+}
+/* FORMULÁRIO */
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
 .sobre-contato {
     width: 85%;
     max-width: 850px;
@@ -1124,13 +1174,6 @@ header {
 .sobre-botao:hover {
     background-color: var(--cor-secundaria);
 }
-/* FORMULÁRIO */
-form {
-    display: flex;
-    flex-direction: column;
-    gap: 12px;
-}
-
 /* RODAPÉ */
 
  footer {
@@ -1149,4 +1192,94 @@ footer p {
     line-height: 1.8;
     text-align: center;
     margin: 0 auto;
+}
+
+/* RESPONSIVIDADE */
+
+/* TELAS MENORES */
+@media (max-width: 1000px) {
+    .logoBarra { padding: 15px 3%; }
+    .logo { margin-right: 20px; }
+    .logo img { width: 170px; }
+    .logoBarra nav ul { gap: 5px; }
+    .logoBarra nav ul li a { padding: 10px; font-size: 14px; }
+    .catalogo1, .catalogo2, .catalogo3, .catalogo4, .catalogo5 { grid-template-columns: repeat(3, minmax(0, 1fr)); }
+    .pagina-minerais .amostras { grid-template-columns: repeat(3, minmax(0, 1fr)); }
+    .catalogo-system { padding: 30px; }
+    .pagina-minerais .divMinRoc { gap: 20px; }
+    .pagina-minerais .divMinerais, .pagina-minerais .divRochas { padding: 20px; }
+}
+
+/* TABLETS */
+@media (max-width: 768px) {
+    main { width: 94%; margin: 25px auto; }
+    .logoBarra { flex-wrap: wrap; justify-content: center; gap: 15px; }
+    .logo { margin: 0; }
+    .logoBarra nav { width: 100%; flex: none; }
+    .logoBarra nav ul { justify-content: center; flex-wrap: wrap; }
+    .logoBarra nav ul li a { padding: 10px 12px; }
+    .pagina-inicio .inicio-apresentacao { padding: 30px; }
+    .pagina-inicio .inicio-conteudo ul { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+    .pagina-inicio .galeria a { flex-wrap: wrap; }
+    .pagina-inicio .galeria img { width: 45%; }
+    .intro-brasil, .linha-tempo, .estados-produtores { padding: 25px; }
+    .estados-produtores ul { grid-template-columns: 1fr; }
+    .intro-minerais { width: 94%; padding: 30px; }
+    .pagina-minerais .divMinRoc { flex-direction: column; }
+    .pagina-minerais .divMinerais, .pagina-minerais .divRochas { width: 100%; }
+    .pagina-minerais .amostras { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+    .pagina-minerais .secao-galeria { padding: 25px; }
+    .pagina-identificacao main, .pagina-catalogo main { padding: 25px 3%; }
+    .pagina-identificacao .introducao-identificacao, .pagina-identificacao .propriedade-identificacao, .pagina-catalogo .botoes-catalogo { padding: 25px; }
+    .catalogo-system { width: 94%; padding: 25px; }
+    .catalogo1, .catalogo2, .catalogo3, .catalogo4, .catalogo5 { grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 20px; }
+    .sobre-informacoes, .sobre-contato { width: 94%; padding: 30px; }
+}
+
+/* CELULARES */
+@media (max-width: 480px) {
+    main { width: 95%; margin: 20px auto; }
+    .logoBarra { padding: 12px 4%; }
+    .logo img { width: 150px; height: auto; }
+    .logoBarra nav ul { flex-direction: column; gap: 5px; }
+    .logoBarra nav ul li { width: 100%; text-align: center; }
+    .logoBarra nav ul li a { padding: 9px; }
+    h1 { font-size: 26px; }
+    h2 { font-size: 21px; }
+    h3 { font-size: 17px; }
+    .pagina-inicio .inicio-apresentacao { padding: 22px; }
+    .pagina-inicio .inicio-conteudo ul { grid-template-columns: 1fr; }
+    .pagina-inicio .inicio-conteudo li { padding: 18px; }
+    .pagina-inicio .galeria a { flex-direction: column; }
+    .pagina-inicio .galeria img { width: 100%; height: 180px; }
+    .intro-brasil, .linha-tempo, .estados-produtores { padding: 18px; }
+    .intro-brasil h1 { font-size: 26px; }
+    .linha-tempo h2, .estados-produtores h2 { font-size: 23px; }
+    .linha-tempo li, .estados-produtores li { padding: 15px; }
+    .intro-minerais { width: 95%; padding: 22px; }
+    .intro-minerais h1 { font-size: 26px; }
+    .pagina-minerais .divMinerais, .pagina-minerais .divRochas { padding: 15px; grid-template-columns: repeat(2, minmax(0, 1fr)); }
+    .pagina-minerais .divMinerais h2, .pagina-minerais .divRochas h2 { grid-column: 1 / -1; }
+    .pagina-minerais .divMinerais ul, .pagina-minerais .divRochas ul { grid-column: 1 / -1; }
+    .pagina-minerais .amostras { grid-template-columns: 1fr; gap: 20px; }
+    .pagina-minerais .rocha img, .pagina-minerais .mineral img { height: 180px; }
+    .pagina-minerais .secao-galeria { padding: 18px; }
+    .pagina-minerais .opcoes-amostras button { width: 100%; padding: 12px; }
+    .pagina-identificacao main, .pagina-catalogo main { padding: 20px 2%; }
+    .pagina-identificacao .introducao-identificacao, .pagina-identificacao .propriedade-identificacao, .pagina-catalogo .botoes-catalogo { padding: 18px; }
+    .pagina-identificacao .introducao-identificacao h1, .pagina-catalogo .botoes-catalogo h1 { font-size: 26px; }
+    .pagina-identificacao .escala-mohs-identificacao table { font-size: 13px; }
+    .pagina-identificacao .escala-mohs-identificacao th, .pagina-identificacao .escala-mohs-identificacao td { padding: 8px; }
+    .catalogo-system { width: 95%; padding: 18px; }
+    .catalogo-system hr { width: 90%; }
+    .catalogo1, .catalogo2, .catalogo3, .catalogo4, .catalogo5 { grid-template-columns: 1fr; gap: 18px; }
+    .pedra-card { padding: 12px; }
+    .pedra-card__botao img { height: 170px; }
+    .sobre-informacoes, .sobre-contato { width: 95%; padding: 20px; }
+    .sobre-informacoes h1 { font-size: 26px; }
+    .sobre-informacoes p { font-size: 15px; text-align: left; }
+    .sobre-contato h2 { font-size: 24px; }
+    .sobre-botao { width: 100%; padding: 12px; }
+    footer { padding: 20px 12px; }
+    footer p { font-size: 13px; }
 }
